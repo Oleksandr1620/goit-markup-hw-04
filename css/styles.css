@@ -485,3 +485,7 @@ button {
   color: #fff;
   margin-bottom: 16px;
 }
+
+.page-footer .social-links-list {
+  gap: 16px;
+}
