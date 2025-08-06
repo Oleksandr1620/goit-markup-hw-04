@@ -454,6 +454,10 @@ button {
   padding-bottom: 100px;
 }
 
+.footer-left {
+  margin-right: 120px;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -470,6 +474,7 @@ button {
 .page-footer .container {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 
 .social-media {
