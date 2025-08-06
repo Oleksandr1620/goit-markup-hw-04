@@ -204,6 +204,18 @@ button {
 
 /* STRATEGY */
 
+.container-antenna {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin: 0 auto;
+  background: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .strategy {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -225,7 +237,7 @@ button {
 .container-page {
   display: block;
   width: 1128px;
-  height: 104px;
+  height: 224px;
 }
 
 .strategy-list {
@@ -238,6 +250,7 @@ button {
 }
 
 .strategy-list-title {
+  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -306,6 +319,41 @@ button {
   color: #434455;
 }
 
+.social-links-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.social-links-item {
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover {
+  background-color: #404bbf;
+}
+
+.social-link:focus {
+  background-color: #404bbf;
+}
+
+.social-ikons {
+  fill: #f4f4fd;
+}
+
 /* PORTFOLIO */
 
 .portfolio {
@@ -332,6 +380,7 @@ button {
 .portfolio-list-item {
   width: 360px;
   background-color: #fff;
+  transition: box-shadow 250ms ease-in-out;
 }
 
 .portfolio-list-name {
@@ -358,6 +407,40 @@ button {
   color: #434455;
 }
 
+.stone {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  background-color: #4d5ae5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px 32px 164px 32px;
+}
+
+.portfolio-list-item:hover .overlay {
+  transform: translateY(0);
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.stone-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
 /* FOOTER */
 
 .page-footer {
@@ -378,4 +461,18 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+.page-footer .container {
+  display: flex;
+  gap: 120px;
+}
+
+.social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }
